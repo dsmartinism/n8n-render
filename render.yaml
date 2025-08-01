@@ -12,7 +12,7 @@ services:
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
         fromDatabase:
-          name: n8n-db
+          name: n8n-dbsamartini
           property: host
       - key: DB_POSTGRESDB_DATABASE
         fromDatabase:
