@@ -16,19 +16,19 @@ services:
           property: host
       - key: DB_POSTGRESDB_DATABASE
         fromDatabase:
-          name: n8n-db
+          name: n8n-dbsamartini
           property: database
       - key: DB_POSTGRESDB_PORT
         fromDatabase:
-          name: n8n-db
+          name: n8n-dbsamartini
           property: port
       - key: DB_POSTGRESDB_USER
         fromDatabase:
-          name: n8n-db
+          name: n8n-dbsamartini
           property: user
       - key: DB_POSTGRESDB_PASSWORD
         fromDatabase:
-          name: n8n-db
+          name: n8n-dbsamartini
           property: password
       - key: DB_POSTGRESDB_SCHEMA
         value: public
