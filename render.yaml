@@ -60,5 +60,5 @@ services:
       sizeGB: 5
 
 databases:
-  - name: n8n-db
+  - name: n8n-dbsamartini
     plan: basic-1gb
