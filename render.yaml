@@ -35,7 +35,7 @@ services:
       - key: WEBHOOK_URL
         value: https://dsamartinism.onrender.com
       - key: N8N_ENCRYPTION_KEY
-        value: YOUR_ENCRYPTION_KEY_HERE
+        value: GtjzdSHCvT6FPn6yXEo9HQr9f0Kp0h9SkR3L1gm3jZA
       - key: GENERIC_TIMEZONE
         value: America/Sao_Paulo
       - key: TZ
