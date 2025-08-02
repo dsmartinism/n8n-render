@@ -2,34 +2,24 @@ services:
   - type: web
     name: n8n
     env: docker
-    region: ohio # optional (defaults to oregon)
-    plan: free # optional (defaults to starter)
-    branch: main # optional (defaults to master)
+    region: ohio
+    plan: free
+    branch: main
     numInstances: 1
     healthCheckPath: /
     envVars:
       - key: DB_TYPE
-        value: postgresdb
+        value: postgres
       - key: DB_POSTGRESDB_HOST
-        fromDatabase:
-          name: n8n-dbsamartini
-          property: host
+        value: db.piporxgowmrghjthuvvl.supabase.co
       - key: DB_POSTGRESDB_DATABASE
-        fromDatabase:
-          name: n8n-dbsamartini
-          property: database
+        value: postgres
       - key: DB_POSTGRESDB_PORT
-        fromDatabase:
-          name: n8n-dbsamartini
-          property: port
+        value: 5432
       - key: DB_POSTGRESDB_USER
-        fromDatabase:
-          name: n8n-dbsamartini
-          property: user
+        value: postgres
       - key: DB_POSTGRESDB_PASSWORD
-        fromDatabase:
-          name: n8n-dbsamartini
-          property: password
+        value: H@ns763422@
       - key: DB_POSTGRESDB_SCHEMA
         value: public
       - key: WEBHOOK_URL
@@ -59,6 +49,4 @@ services:
       mountPath: /home/node/.n8n
       sizeGB: 5
 
-databases:
-  - name: n8n-dbsamartini
-    plan: basic-1gb
+
